@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000000; /* Black background */
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff; /* White text */
+    margin-left: 100px;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff; /* White text */
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff2d; /* Blue hover effect */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff; /* White icon for visibility */
+}
+
+.icon i {
+    font-size: 1.25rem;
+    color: #ffffff; /* White icons */
+    margin-right: 10px;
+}
+
+.icon i:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+.d-flex.align-items-center {
+    margin-left: auto;
+}
+
+/* Section Styles */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.family, .comscie, .university-section, .umhistory, .magazine, .home, .about, .products, .events, .contacts {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.home {
+  background-image: url("img/ghost.jpg");
+  background-color: white;
+}
+
+.about {
+  background-image: url("img/airsoftbg.png");
+  background-color: black;
+}
+
+.umhistory, .magazine, .products, .events, .contacts {
+  background-color: black;
+}
+
+.umhistory {
+  overflow: auto;
+  height: 100vh;
+}
+
+.home {
+    height: 100vh;                 /* Makes sure the section takes up the full viewport height */
+    width: 100%;                   /* Ensures the section takes up the full width of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;                     /* Removes any margin */
+    padding: 0;                    /* Removes any padding */
+    box-sizing: border-box;        /* Ensures padding and border are included in the element's total width and height */
+}
+
+.about {
+    height: 100vh;                 /* Makes sure the section takes up the full viewport height */
+    width: 100%;                   /* Ensures the section takes up the full width of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;                     /* Removes any margin */
+    padding: 0;                    /* Removes any padding */
+    box-sizing: border-box;
+}
+
+.products{
+  background-color: rgb(0, 0, 0);
+}
+
+.events{
+    height: 100vh;                 /* Makes sure the section takes up the full viewport height */
+    width: 100%;                   /* Ensures the section takes up the full width of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;                     /* Removes any margin */
+    padding: 0;                    /* Removes any padding */
+    box-sizing: border-box;
+}
+
+.contacts {
+    height: 100vh;                 /* Makes sure the section takes up the full viewport height */
+    width: 100%;                   /* Ensures the section takes up the full width of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;                     /* Removes any margin */
+    padding: 0;                    /* Removes any padding */
+    box-sizing: border-box;
+}
+
+/* Animation */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.title-page {
+    width: 100vh;
+}
+
+.home .main-title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    color: #000000;
+    text-shadow: 2px 2px 4px #ffffff; /* Enhanced text shadow */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Subtitle styling */
+.home .subtitle {  
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #ffffff; /* Enhanced text shadow */
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.aboutme-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* UIVerse Card */
+.card {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: space-around; /* Distribute space between elements */
+  }
+  
+  .card .img {
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures the image fits inside the rounded corners */
+    margin-top: 20px; /* Adds some space at the top */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px; /* Adds space between the image and the text */
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em 1em 0.5em; /* Adds space around the text */
+  }
+  
+  .card .share {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    color: red;
+  }
+  
+  .card button {
+    padding: 0.8em 1.7em;
+    margin: 20px auto; /* Centers the button horizontally */
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* carousel */
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 10px;
+  
+    > div {
+      flex: 0 0 120px;
+      border-radius: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #1e0e3e;
+      position: relative;
+      overflow: hidden;
+  
+      &:nth-of-type(1) {
+        background: url("img/event1.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(2) {
+        background: url("img/gottalent.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(3) {
+        background: url("img/foundation.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(4) {
+        background: url("img/bastaevent.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(5) {
+        background: url("img/intrams.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(6) {
+        background: url("img/csevent69.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(7) {
+        background: url("img/raffle.jpg")
+          no-repeat 50% / cover;
+      }
+      .content {
+        font-size: 1.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        opacity: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        background: rgb(2, 2, 46);
+        background: linear-gradient(
+          0deg,
+          rgba(2, 2, 46, 0.6755077030812324) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: translatey(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+        visibility: hidden;
+  
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+  
+      &:hover {
+        flex: 0 0 250px;
+        box-shadow: 1px 3px 15px #7645d8;
+        transform: translatey(-30px);
+      }
+  
+      &:hover .content {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+      }
+    }
+  }
+  .custom-card {
+    width: 1000px;
+    max-width: 10000px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    margin: 0 auto;
+  }
+  
+  .custom-card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+/* product-cards */
+
+.custom-card {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  --main-focus: #2d8cf0;
+  width: 230px;
+  height: 300px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom-card:last-child {
+  justify-content: flex-end;
+}
+
+.custom-card-img {
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-img {
+  transform: scale(1);
+  position: relative;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 80px 50px;
+  border-top-right-radius: 80px 50px;
+  border: 2px solid black;
+  background-color: #228b22;
+  background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
+}
+
+.custom-card-title {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.custom-card-subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--font-color-sub);
+  text-align: left;
+}
+
+.custom-card-divider {
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+}
+
+.custom-card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-card-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.custom-card-price span {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color-sub);
+}
+
+.custom-card-btn {
+  height: 35px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+
+.custom-card-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--main-color);
+  transition: all 0.3s;
+}
+
+.custom-card-img:hover {
+  transform: translateY(-3px);
+}
+
+.custom-card-btn:hover {
+  border: 2px solid var(--main-focus);
+}
+
+.custom-card-btn:hover svg {
+  fill: var(--main-focus);
+}
+
+.custom-card-btn:active {
+  transform: translateY(3px);
+}
+
+/* location section */
+
+.custom-card-location {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  --main-focus: #2d8cf0;
+  width: 800px;
+  height: 500px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

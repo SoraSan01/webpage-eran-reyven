@@ -1,0 +1,49 @@
+/* CSS for the tabbed navigation */
+.tab {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid rgb(255, 0, 0);
+  }
+
+  .tab:hover {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+  
+  /* CSS for the tabbed content */
+  #tabbed-content {
+    margin-top: 20px;
+  }
+  
+  /* CSS for the image gallery */
+  .images {
+    display: none;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    flex-wrap: wrap;
+    height: 100%; /* Adjust if necessary */
+  }
+  
+  .images.active {
+    display: flex;
+  }
+  
+  .images img {
+    max-width: 200px;
+    max-height: 200px; /* Adjust as needed */
+    margin: 10px;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    flex: 1 1 auto; /* Ensure images fit within the container */
+  }
+  
+  /* Optional: Ensure container does not exceed viewport width */
+  .container {
+    overflow: hidden;
+  }
+  
